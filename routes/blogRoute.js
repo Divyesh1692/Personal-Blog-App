@@ -11,7 +11,7 @@ const {
 
 const blogRouter = Router();
 
-blogRouter.get("/", allBlogs);
+blogRouter.get("/", validator, allBlogs);
 blogRouter.get("/sort", validator, sortBlog);
 blogRouter.get("/:id", validator, singleBlog);
 blogRouter.post("/create", validator, createBlog);
