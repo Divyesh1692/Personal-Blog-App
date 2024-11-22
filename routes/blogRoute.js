@@ -12,9 +12,9 @@ const {
 const blogRouter = Router();
 
 blogRouter.get("/", allBlogs);
-blogRouter.get("/blog/sort", validator, sortBlog);
-blogRouter.get("/blog/:id", validator, singleBlog);
-blogRouter.post("/blog/create", validator, createBlog);
-blogRouter.patch("/blog/update/:id", validator, updateBlog);
-blogRouter.delete("/blog/delete/:id", validator, deleteBlog);
+blogRouter.get("/sort", validator, sortBlog);
+blogRouter.get("/:id", validator, singleBlog);
+blogRouter.post("/create", validator, createBlog);
+blogRouter.patch("/update/:id", validator, updateBlog);
+blogRouter.delete("/delete/:id", validator, deleteBlog);
 module.exports = blogRouter;

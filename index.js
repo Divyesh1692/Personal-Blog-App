@@ -13,7 +13,11 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/user", userRouter);
-app.use("/", blogRouter);
+app.use("/blog", blogRouter);
+
+app.get("/", (req, res) => {
+  res.json({ message: "welcome to personal blog app" });
+});
 
 app.listen(PORT, () => {
   console.log("listening....");
