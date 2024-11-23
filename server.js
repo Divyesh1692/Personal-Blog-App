@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const mongoose = require("mongoose");
 const userRouter = require("./routes/userRoutes");
 const blogRouter = require("./routes/blogRoute");
 const cookieParser = require("cookie-parser");
