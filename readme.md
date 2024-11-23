@@ -1,5 +1,3 @@
-Here's a sample `README.md` file for your Personal Blog App Backend project:
-
 # Personal Blog App Backend
 
 This is the backend for a Personal Blog App where users can create accounts, log in, and manage their blogs. The app allows users to create, update, and delete their own blogs. Users cannot update or delete other users' blogs. It uses JWT for authentication.
@@ -63,7 +61,7 @@ Your server should now be running at `http://localhost:5000`.
 
 ## API Endpoints
 
-### 1. **POST /auth/signup**
+### 1. **POST /user/signup**
 
 Create a new user account.
 
@@ -85,7 +83,7 @@ Create a new user account.
 }
 ```
 
-### 2. **POST /auth/login**
+### 2. **POST /user/login**
 
 Login and obtain a JWT token.
 
@@ -106,7 +104,7 @@ Login and obtain a JWT token.
 }
 ```
 
-### 3. **POST /blogs**
+### 3. **POST /blog/create**
 
 Create a new blog.
 
@@ -140,7 +138,7 @@ Create a new blog.
 }
 ```
 
-### 4. **GET /blogs**
+### 4. **GET /blog**
 
 Get all blogs.
 
@@ -163,7 +161,7 @@ Get all blogs.
 }
 ```
 
-### 5. **GET /blogs/:id**
+### 5. **GET /blog/:id**
 
 Get a single blog by ID.
 
@@ -179,7 +177,7 @@ Get a single blog by ID.
 }
 ```
 
-### 6. **PUT /blogs/:id**
+### 6. **PATCH /blog/update/:id**
 
 Update a blog.
 
@@ -208,7 +206,7 @@ Update a blog.
 }
 ```
 
-### 7. **DELETE /blogs/:id**
+### 7. **DELETE /blog/delete/:id**
 
 Delete a blog.
 
@@ -232,10 +230,10 @@ Delete a blog.
 
 You can test the API using tools like [Postman](https://www.postman.com/)
 
-1. **Signup**: POST `/auth/signup` to create a user.
-2. **Login**: POST `/auth/login` to get a JWT token.
-3. **Create Blog**: POST `/blogs` to create a new blog (use the JWT token in headers).
-4. **Get Blogs**: GET `/blogs` to retrieve all blogs.
-5. **Get Blog by ID**: GET `/blogs/:id` to get a specific blog.
-6. **Update Blog**: PUT `/blogs/:id` to update your blog (use JWT token).
-7. **Delete Blog**: DELETE `/blogs/:id` to delete your blog (use JWT token).
+1. **Signup**: POST `/user/signup` to create a user.
+2. **Login**: POST `/user/login` to get a JWT token.
+3. **Create Blog**: POST `/blog/create` to create a new blog (use the JWT token in headers).
+4. **Get Blogs**: GET `/blog` to retrieve all blogs.
+5. **Get Blog by ID**: GET `/blog/:id` to get a specific blog.
+6. **Update Blog**: PUT `/blog/update/:id` to update your blog (use JWT token).
+7. **Delete Blog**: DELETE `/blog/delete/:id` to delete your blog (use JWT token).
