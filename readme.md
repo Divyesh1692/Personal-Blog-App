@@ -22,7 +22,7 @@ This is the backend for a Personal Blog App where users can create accounts, log
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/personal-blog-app-backend.git
+git clone https://github.com/Divyesh1692/Personal-Blog-App
 ```
 
 ### 2. Navigate to the project folder:
@@ -237,3 +237,5 @@ You can test the API using tools like [Postman](https://www.postman.com/)
 5. **Get Blog by ID**: GET `/blog/:id` to get a specific blog.
 6. **Update Blog**: PUT `/blog/update/:id` to update your blog (use JWT token).
 7. **Delete Blog**: DELETE `/blog/delete/:id` to delete your blog (use JWT token).
+
+Vercel Deployment Link : https://personal-blog-app-lac.vercel.app/
