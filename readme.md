@@ -2,6 +2,10 @@
 
 This is the backend for a Personal Blog App where users can create accounts, log in, and manage their blogs. The app allows users to create, update, and delete their own blogs. Users cannot update or delete other users' blogs. It uses JWT for authentication.
 
+## Vercel Deployment Link
+
+https://personal-blog-app-lac.vercel.app/
+
 ## Features
 
 - User registration and login
@@ -237,5 +241,3 @@ You can test the API using tools like [Postman](https://www.postman.com/)
 5. **Get Blog by ID**: GET `/blog/:id` to get a specific blog.
 6. **Update Blog**: PUT `/blog/update/:id` to update your blog (use JWT token).
 7. **Delete Blog**: DELETE `/blog/delete/:id` to delete your blog (use JWT token).
-
-Vercel Deployment Link : https://personal-blog-app-lac.vercel.app/
